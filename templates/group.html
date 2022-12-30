@@ -1,0 +1,9 @@
+
+<p>{{.Name}}</p>
+<p>{{.CreationDate}}</p>
+<ul> {{range .Members}} <li>{{.}}</li> {{end}} </ul>
+
+{{range .Members}} <span> {{.}}</span>  {{end}} <br>
+
+<img class="group-image img"
+src={{.Image}}>

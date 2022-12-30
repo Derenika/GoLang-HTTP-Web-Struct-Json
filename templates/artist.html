@@ -1,0 +1,16 @@
+{{range .}}
+<a href="/artists/{{.Id}}">
+  <div class="card">
+    <div class="card_case">
+      <div> <img class="group-image img" src="{{.Image}}"> </div>
+      <div class="card_txt">
+        <h1>{{.Name}}</h1>
+        <h3>Creation Date:</h3>
+        <p>{{.CreationDate}}</p>
+        <h3>{{len .Members}} Members:</h3>
+        <p>{{range .Members}}<span>{{.}}</span> {{end}}</p>
+      </div>
+    </div>
+  </div>
+</a>
+{{end}}
